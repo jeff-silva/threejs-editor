@@ -1,0 +1,8 @@
+services:
+  web:
+    image: ubuntu/apache2
+    ports:
+      - "8080:80"
+    volumes:
+      - ./three.js:/var/www/html
+      # - ./httpd.conf:/usr/local/apache2/conf/httpd.conf
